@@ -11,7 +11,7 @@ body{
     overflow: hidden;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-top:3.5rem;
 }
 
 /*cool frame with border-image; centering children with flexbox*/
@@ -297,4 +297,54 @@ body{
 .fa-music{
     margin-top:8%;
     margin-left:13%;
+}
+
+@media screen and (max-width:640px){
+    .container{
+        width:27rem;
+        height:20.3rem;
+    }
+
+    .white-guy{
+        width:9rem;
+        height:17.2rem;
+    }
+
+    .white-guy-hat{
+        border-bottom:3.5em solid white;
+        border-right:3.5em solid transparent;
+        border-left:5.55em solid transparent;
+    }
+
+    .white-guy-shirt{
+        margin-left:8px;
+    }
+
+    .orange-guy{
+        width:7.5rem;
+        height:17.3rem;
+        margin-right:-13px;
+        margin-bottom:-7px;
+    }
+
+    .orange-guy-body{
+        height:16rem;
+
+    }
+
+    .triangles{
+        border-right:20.5px solid yellow;
+        border-bottom:18.5px solid transparent;
+        border-top:18.5px solid transparent;
+    }
+
+    .black-guy{
+        width:8rem;
+        height:16.75rem;
+    }
+
+    .black-guy-hat{
+        border-bottom:75px solid black;
+        border-right:127.5px solid transparent;
+    }
 }
