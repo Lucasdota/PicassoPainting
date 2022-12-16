@@ -1,21 +1,37 @@
+/*remove all unnecessary padding*/
 *{
     box-sizing:border-box;
 }
 
+/*aesthetic background; centering children with flexbox*/
 body{
+    background-image: linear-gradient(gray,white);
     height: 100vh;
     margin: 0;
     overflow: hidden;
-    background-image:linear-gradient(brown 60%,beige 60%, beige 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/*cool frame with border-image; centering children with flexbox*/
+.container{
+    border:1px solid transparent;
+    border-image:url(images/frame.png) 45 45 / 25px 25px / 1.2rem round;
+    background-image:linear-gradient(#8B4513 60%,rgb(184, 132, 46) 60%,
+    rgb(184, 132, 46) 100%);
+    width:54rem;
+    height:40.6rem;
+    display:flex;
+    justify-content: center;
+    padding:1em;
+}
+
+/*z-index to set overlay order*/
 .white-guy{
     width:18rem;
     height:34.5rem;
-    position:absolute;
-    top:2%;
-    left:20%;
-    z-index:999;
+    z-index:900;
 }
 
 .white-guy-hat{
@@ -43,8 +59,9 @@ body{
     align-self: flex-end;
 }
 
+/*cool round borders to the eyes*/
 .white-guy-eye{
-    background-color:brown;
+    background-color:#8B4513;
     width:13%;
     height:45%;
     border-top-left-radius: 0.6em 1.2em;
@@ -54,7 +71,7 @@ body{
 }
 
 .white-guy-shirt{
-    background-color: blue;
+    background-color: #1E90FF;
     width:95%;
     height:55%;
     margin-left:1em;
@@ -65,7 +82,7 @@ body{
 }
 
 .white-guy-tie{
-    background-color: mediumseagreen;  
+    background-color: rgb(167, 162, 117);  
     width:15%;
     height:77%;
     margin-right:1em;
@@ -75,6 +92,7 @@ body{
     justify-content: space-around;
 }
 
+/*tie's dots*/
 .tie-decor{
     background-color: black;
     width:30%;
@@ -83,20 +101,20 @@ body{
 }
 
 .white-guy-board{
-    background-color: burlywood;
-    width:145%;
+    background-color: #D2691E;
+    width:160%;
     height:30%;
     margin-left:0.5em;
 }
 
+/*little down further them its brothers with flex-end aligment*/
 .orange-guy{
     width:15rem;
-    height:36rem;
-    position:absolute;
-    top:8%;
-    left:41.2%;
+    height:35.6rem;
+    align-self: flex-end;
 }
 
+/*round hat*/
 .orange-guy-hat{
     width:74%;
     height:13%;
@@ -106,17 +124,25 @@ body{
     margin-left:0.8em;
 }
 
-.orange-guy-shirt{
+.orange-guy-mask{
     width:100%;
-    height:45%;
-    background-color: blue;
+    height:87%;
+    background-color: #1E90FF;
+    display:flex;
+    flex-direction: column;
+}
+
+/*puts both eyes in the same line*/
+.orange-guy-eyes{
+    width:100%;
+    height:9%;
     display:flex;
 }
 
 .orange-guy-eye1{
-    background-color:brown;
-    width:17%;
-    height:7.4%;
+    background-color:#8B4513;
+    width:15%;
+    height:55%;
     border-top-left-radius: 0.6em 1.2em;
     border-bottom-left-radius: 0.6em;
     border-top-right-radius: 0.6em;
@@ -125,9 +151,9 @@ body{
 }
 
 .orange-guy-eye2{
-    background-color:brown;
-    width:17%;
-    height:7.4%;
+    background-color:#8B4513;
+    width:15%;
+    height:55%;
     border-top-left-radius: 0.6em 1.2em;
     border-bottom-left-radius: 0.6em;
     border-top-right-radius: 0.6em;
@@ -135,4 +161,140 @@ body{
     margin:0.7em 0 0 3em;
 }
 
+/*wrapping triangles to the next line*/
+.orange-guy-body{
+    background-color:orangered;
+    width:110%;
+    height:32rem;
+    display:flex;
+    flex-wrap: wrap;
+}
 
+/*same technique of the first hat(white-guy)*/
+.triangles{
+    width:19%;
+    height:16%;
+    border-right:51px solid yellow;
+    border-bottom:37px solid transparent;
+    border-top:37px solid transparent;
+}
+
+/*z-index to set overlay priority*/
+.black-guy{
+    width:16rem;
+    height:33.5rem;
+    align-self: center;
+    margin-left:24px;
+    margin-bottom:35px;
+    z-index: 999;
+}
+
+.black-guy-hat{
+    border-bottom:150px solid black;
+    border-right:255px solid transparent;
+}
+
+.black-guy-body{
+    background-color: black;
+    width:100%;
+    height:80%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.black-guy-mask{
+    background-color: rgb(167, 162, 117);
+    width:52%;
+    height:32%;
+    display:flex;
+    justify-content: space-around;
+    margin-top:-0.5em;
+}
+
+.black-guy-eye1{
+    background-color: #8B4513;
+    width:27%;
+    height:15%;
+    border-top-left-radius: 0.6em 1.2em;
+    border-bottom-left-radius: 0.6em;
+    border-top-right-radius: 0.6em;
+    border-bottom-right-radius: 0.6em 1.2em;
+    margin-top:0.9em;
+    margin-left:0.5em;
+}
+
+.black-guy-eye2{
+    background-color: #8B4513;
+    width:27%;
+    height:15%;
+    border-top-left-radius: 0.6em 1.2em;
+    border-bottom-left-radius: 0.6em;
+    border-top-right-radius: 0.6em;
+    border-bottom-right-radius: 0.6em 1.2em;
+    margin-top:0.9em;
+    margin-right:0.5em;
+}
+
+.black-guy-shirt{
+    background-color: #1E90FF;
+    width:49%;
+    height:62%;
+    align-self:flex-start;
+    margin-top:-5px;
+}
+
+/*negative margin-left to align it with middle guy(orange)*/
+.orange-guy-guitar{
+    width:308.5%;
+    height:48%;
+    display: flex;
+    justify-content: center;
+    margin-left: -262px;
+    margin-top:-48px;
+}
+
+.guitar1{
+    background-color: Goldenrod;
+    width:44%;
+    height:100%;
+    border-radius: 100px;
+    align-self: flex-start;
+}
+
+.guitar2{
+    background-color: Goldenrod;
+    width:44%;
+    height:100%;
+    border-radius: 100px;
+    margin-left:-37px;
+}
+
+.guitar3{
+    background-color: #D2691E;
+    width:52%;
+    height:25%;
+    align-self: center;
+    margin-left:-50px
+}
+
+/*negative margin-left to align it with middle guy(orange)*/
+.black-guy-board{
+    background-color: white;
+    width:300%;
+    height:35%;
+    margin-left:-160px;
+    margin-top:55px;
+}
+
+/*guitar lines*/
+.fa-bars{
+    margin-top:32%;
+    margin-left:40%;
+}
+
+/*song icons*/ 
+.fa-music{
+    margin-top:8%;
+    margin-left:13%;
+}

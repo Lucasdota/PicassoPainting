@@ -6,42 +6,99 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="A Picasso Painting using only HTML and CSS to demonstrate the power of divs.">
         <link rel="stylesheet" href="style.css">
+        <!--music icons to download below-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
         <link rel="icon" href="images/art.png">
         <title>Picasso Painting | HTML and CSS only</title>
     </head>
     <body>
-        <div class="white-guy">
-            <div class="white-guy-hat"></div>
-            <div class="white-guy-body">               
-                <div class="white-guy-shirt">
-                    <div class="white-guy-mask">
-                        <div class="white-guy-eye"></div>
-                        <div class="white-guy-eye"></div>
+        <div class="container"><!--contains the painting divs and the linear-gradient background-->
+            <div class="white-guy">
+                <div class="white-guy-hat"></div><!--triangle shape made with borders-->
+                <div class="white-guy-body"><!--put the rest inside of it to better position them-->               
+                    <div class="white-guy-shirt"><!--the mask and tie inside to overlay it-->
+                        <div class="white-guy-mask">
+                            <div class="white-guy-eye"></div>
+                            <div class="white-guy-eye"></div>
+                        </div>
+                        <div class="white-guy-tie">
+                            <div class="tie-decor"></div>
+                            <div class="tie-decor"></div>
+                            <div class="tie-decor"></div>
+                            <div class="tie-decor"></div>
+                            <div class="tie-decor"></div>
+                        </div>
                     </div>
-                    <div class="white-guy-tie">
-                        <div class="tie-decor"></div>
-                        <div class="tie-decor"></div>
-                        <div class="tie-decor"></div>
-                        <div class="tie-decor"></div>
-                        <div class="tie-decor"></div>
+                    <div class="white-guy-board"></div>
+                </div>           
+            </div><!--end of left guy(white-guy)-->
+            <div class="orange-guy">
+                <div class="orange-guy-hat"></div><!--border-radius to round shape it-->
+                <div class="orange-guy-mask"><!--container to better position the rest overlaying it-->
+                    <div class="orange-guy-eyes">
+                        <div class="orange-guy-eye1"></div>
+                        <div class="orange-guy-eye2"></div> 
+                    </div>
+                    <div class="orange-guy-body"><!--30 triangles inside of it to fill the body-->
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
+                        <div class="triangles"></div>
                     </div>
                 </div>
-                <div class="white-guy-board"></div>
-            </div>           
-        </div>
-        <div class="orange-guy">
-            <div class="orange-guy-hat"></div>
-            <div class="orange-guy-shirt">
-                <div class="orange-guy-eye1"></div>
-                <div class="orange-guy-eye2"></div>
-            </div>
-            <div class="orange-guy-board"></div>
-            <div class="orange-guy-guitar">
-                <div class="guitar1"></div>
-                <div class="guitar2"></div>
-                <div class="guitar3"></div>
-            </div>
-            <div class="orange-guy-notes"></div>
-        </div>
+            </div><!--end of middle guy(orange)-->
+            <div class="black-guy">
+                <div class="black-guy-hat"></div><!--same technique as the first hat-->
+                <div class="black-guy-body"><!--container for the rest to better position them-->
+                    <div class="black-guy-mask">
+                        <div class="black-guy-eye1"></div>
+                        <div class="black-guy-eye2"></div>
+                    </div>
+                    <div class="black-guy-shirt"><!--put the guitar and the white board here with negative margin-left to align it with the middle guy-->
+                        <div class="orange-guy-guitar"><!--guitar container to better position it-->
+                            <div class="guitar1">
+                                <i class="fas fa-bars"></i><!--bar icons-->
+                            </div> 
+                            <div class="guitar2">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                            <div class="guitar3"></div>  
+                        </div>
+                        <div class="black-guy-board">
+                            <i class="fas fa-music"></i><!--song icons-->
+                            <i class="fas fa-music"></i>
+                            <i class="fas fa-music"></i>
+                            <i class="fas fa-music"></i>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end of right guy(black)-->
+        </div>    
     </body>
 </html>
