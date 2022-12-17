@@ -299,6 +299,7 @@ body{
     margin-left:13%;
 }
 
+/*resizing attributes for smaller devices such as phones with 600px and down width screens*/
 @media screen and (max-width:600px){
     .container{
         width:27rem;
