@@ -299,7 +299,7 @@ body{
     margin-left:13%;
 }
 
-@media screen and (max-width:640px){
+@media screen and (max-width:600px){
     .container{
         width:27rem;
         height:20.3rem;
@@ -307,7 +307,8 @@ body{
 
     .white-guy{
         width:9rem;
-        height:17.2rem;
+        height:17rem;
+        margin-bottom:3px;
     }
 
     .white-guy-hat{
@@ -322,14 +323,13 @@ body{
 
     .orange-guy{
         width:7.5rem;
-        height:17.3rem;
+        height:17.45rem;
         margin-right:-13px;
         margin-bottom:-7px;
     }
 
     .orange-guy-body{
         height:16rem;
-
     }
 
     .triangles{
@@ -338,13 +338,71 @@ body{
         border-top:18.5px solid transparent;
     }
 
+    .orange-guy-guitar{
+        width:315%;
+        height:52%;
+        margin-left:-130px;
+        margin-top:-32px;
+    }
+
+    .guitar1{
+        width:42%;
+    }
+    
+    .guitar2{
+        width:42%;
+    }
+    
+    .guitar3{
+        width:42.5%;
+        margin-left:-24px
+    }
+
+    .orange-guy-eye1{
+        border-top-left-radius: 1.2em 2.4em;
+        border-bottom-left-radius: 1.2em;
+        border-top-right-radius: 1.2em;
+        border-bottom-right-radius: 1.2em 2.4em;
+        margin:0.35em 0 0 1.5em;
+    }
+    
+    .orange-guy-eye2{
+        border-top-left-radius: 1.2em 2.4em;
+        border-bottom-left-radius: 1.2em;
+        border-top-right-radius: 1.2em;
+        border-bottom-right-radius: 1.2em 2.4em;
+        margin:0.35em 0 0 1.5em;
+    }
+
     .black-guy{
         width:8rem;
         height:16.75rem;
+        margin-bottom:15px;
     }
 
     .black-guy-hat{
         border-bottom:75px solid black;
         border-right:127.5px solid transparent;
+    }
+
+    .black-guy-mask{
+        margin-top:-0.2em;
+    }
+
+    .black-guy-shirt{
+        margin-top:5px;
+    }
+
+    .black-guy-board{
+        margin-left:-80px;
+        margin-top:35px;
+    }
+
+    .fa-bars{
+        font-size:12px;
+    }
+
+    .fa-music{
+        font-size:12px;
     }
 }
