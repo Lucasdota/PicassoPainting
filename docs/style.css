@@ -1,4 +1,4 @@
-/*remove all unnecessary padding*/
+/*add all margins and paddings to the total width and height of its elements*/
 *{
     box-sizing:border-box;
 }
