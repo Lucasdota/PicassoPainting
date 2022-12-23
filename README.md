@@ -14,4 +14,8 @@ Knowledges applied:
     .Overlay priority set with z-index and adjusted with margins
     .Linear-gradient function to create cool looking backgrounds
     .Icons downloaded from external website
+    .viewport meta tag to adjust the width according to the device's width
+    .description meta tag to help browsers understand the content
+    .link tag to add icon to the browser tab bar
+    .and more  
     
